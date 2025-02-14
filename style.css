@@ -59,3 +59,24 @@ img {
     border-radius: 15px;
     padding: 5px;
 }
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+section {
+    border: 5px solid black;
+}
+* {
+    box-sizing: border-box;
+}
+@media screen and (max-width: 800px){
+    main {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 500px){
+    main {
+    grid-template-columns: 1fr;
+    }
+}
